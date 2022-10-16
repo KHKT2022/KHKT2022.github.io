@@ -30,7 +30,7 @@
 
         <input type="text" id ="search-text" value="" placeholder="Nhập từ cần chuyển">
         <button onclick="myFunction()" id="search-button" ><i class="fa-solid fa-magnifying-glass"></i></button>
-        <p id ="ans"> ans </p>
+        từ đã chuyển: <p id ="ans"></p>
         <script>
 
             var before = ["Cái l*n má",
@@ -87,7 +87,7 @@
                 for (let i = 0; i<=before.length;i++){
                     
                     
-                    if (input == before[i]){
+                    if (input == before[i] || input == short[i]){
 
                         document.getElementById("ans").innerHTML = after[i];
 
