@@ -88,18 +88,20 @@ body{
 
 }
 
-@media screen and (min-width:600px){
-
-
-
-}
-
 #answer p{
 
     display: inline-block;
     vertical-align: top;
 
 }
+
+@media screen and (min-width:600px){
+
+
+
+}
+
+
 /*setup main menu */
 
 
