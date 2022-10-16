@@ -93,6 +93,13 @@ body{
 
 
 }
+
+#answer p{
+
+    display: inline-block;
+    vertical-align: top;
+
+}
 /*setup main menu */
 
 
