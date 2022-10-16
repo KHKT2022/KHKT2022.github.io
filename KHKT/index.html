@@ -30,7 +30,13 @@
 
         <input type="text" id ="search-text" value="" placeholder="Nhập từ cần chuyển">
         <button onclick="myFunction()" id="search-button" ><i class="fa-solid fa-magnifying-glass"></i></button>
-        từ đã chuyển: <p id ="ans"></p>
+        <div id="answer">
+
+            <p>từ đã chuyển: </p>
+            <p id ="ans"></p>
+
+        </div>
+        
         <script>
 
             var before = ["Cái l*n má",
@@ -78,20 +84,26 @@
                 ]
 
             const short = ["","cmn","cmnr","vl","","","","cc","","vcl"]
-
+           
             function myFunction(){
-
+                var check = false;
                 var input = document.getElementById("search-text").value;
                 console.log(input);
         
                 for (let i = 0; i<=before.length;i++){
                     
                     
-                    if (input == before[i] || input == short[i]){
+                    if (input == before[i]){
 
                         document.getElementById("ans").innerHTML = after[i];
+                        check = true;
 
                     }
+
+                }
+                if (check == false){
+
+                    document.getElementById("ans").innerHTML = "hãy nhập lại!"
 
                 }
                 
