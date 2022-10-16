@@ -25,13 +25,83 @@
         
     
     </div>
+    <div id="main">
+    <div id="search-box">
 
-    <form action="" id="search-box">
+        <input type="text" id ="search-text" value="" placeholder="Nhập từ cần chuyển">
+        <button onclick="myFunction()" id="search-button" ><i class="fa-solid fa-magnifying-glass"></i></button>
+        <p id ="ans"> ans </p>
+        <script>
 
-        <input type="text" id ="search-text">
-        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            var before = ["Cái l*n má",
+                "Con m* nó",
+                "Con m* nó rồi",
+                "Vãi l*n",
+                "Đ* má",
+                "Có cái l*n",
+                "Con điên",
+                "Con c*c",
+                "Ch* má",
+                "Vãi cả l*n",
+                "Thấy mẹ", 
+                "Cái l*n",
+                "Lòi l*n",
+                "Con phò",
+                "Phò",
+                "Chó",
+                "Đầu bu*i",
+                "Vãi c*c",
+                "Bu*i",
+                "Con đĩ"]
 
-    </form>
+            var after = ["Cái lùm mía",
+                "Cơm mẹ nấu",
+                "Cơm mẹ nấu rồi",
+                "Vật lộn, vậy luôn",
+                "Đậu xanh rau má",
+                "Có cái beep",
+                "Nha đầu ngốc",
+                "Cúc cu",
+                "Chào mào",
+                "Vãi cả linh hồn",
+                "Thấy mồ, thấy mẹo",
+                "Cái lon",
+                "Lợn lòi",
+                "Con pò",
+                "Pò",
+                "Chá, chóa",
+                "Đầu bưởi",
+                "Vải cực, Vãi đạn",
+                "Bưởi",
+                "Con đĩa"
+                
+                ]
+
+            const short = ["","cmn","cmnr","vl","","","","cc","","vcl"]
+
+            function myFunction(){
+
+                var input = document.getElementById("search-text").value;
+                console.log(input);
+        
+                for (let i = 0; i<=before.length;i++){
+                    
+                    
+                    if (input == before[i]){
+
+                        document.getElementById("ans").innerHTML = after[i];
+
+                    }
+
+                }
+                
+
+            }
+
+        </script>
+    </div>
+    
+</div>
     
     
 </body>
