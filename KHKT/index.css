@@ -88,20 +88,19 @@ body{
 
 }
 
-#answer p{
-
-    display: inline-block;
-    vertical-align: top;
-
-}
-
 @media screen and (min-width:600px){
 
 
 
 }
 
+#answer p{
 
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 7px;
+
+}
 /*setup main menu */
 
 
@@ -132,7 +131,7 @@ body{
 
 }
 
-#search-box #search-button{
+#search-box #words{
 
     background-color: #fff;
     border: none;
