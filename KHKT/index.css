@@ -73,11 +73,12 @@ ul#main_menu li a{
 
 body{
 
+    background-image: url(image/background.jpg);
     background-color: #F5F5DC;
     background-attachment: fixed;
-    height: 100%;
+    height: auto;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     font-size: 23px;
     font-family: 'Times New Roman', Times, serif;
 }
