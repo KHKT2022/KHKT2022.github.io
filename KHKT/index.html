@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
     <title>KHKT SITE</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
     <div id="wrapper">
        
         <ul id="main_menu">
-            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="index(2).html">Trang Chủ</a></li>
             <li><a href="story.html">Mẫu Truyện</a></li> 
         </ul>
         <div class="clearfix"></div>
@@ -58,33 +58,59 @@
 
             <p style="font-size: 25px;">Từ đã chuyển: </p>
             <p id ="ans" style="font-size: 25px;">Cái lùm mía</p>
+            <br>
+            <div id = "ansimg">
 
+                <img src="image/1.png" id = "ansimage" style="background-color: rgba(250,250,250,.5) ;">
+
+            </div>
         </div>
         
         <script>
 
-var after = ["Cái lùm mía",
-                "Cơm mẹ nấu",
-                "Cơm mẹ nấu rồi",
-                "Vật lộn, vậy luôn",
-                "Đậu xanh rau má",
-                "Có cái beep",
-                "Nha đầu ngốc", 
-                "Cúc cu",
-                "Chào mào",
-                "Vãi cả linh hồn",
-                "Thấy mồ, thấy mẹo",
-                "Cái lon",
-                "Lợn lòi",
-                "Con pò",
-                "Pò",
-                "Chá, chóa",
-                "Đầu bưởi",
-                "Vải cực, Vãi đạn",
-                "Bưởi",
-                "Con đĩa"
-                
-                ]
+        var src_after = ["1.png"
+        ,"2.png"
+        ,"3.png"
+        ,"4.png"
+        ,"5.png",
+        "6.png"
+        ,"7.png"
+        ,"8.png"
+        ,"9.png"
+        ,"10.png",
+        "11.png"
+        ,"12.png"
+        ,"13.png"
+        ,"14.png"
+        ,"15.png",
+        "16.png"
+        ,"17.png"
+        ,"18.png"
+        ,"19.png"
+        ,"20.png"]
+
+        var after = ["Cái lùm mía",
+                        "Cơm mẹ nấu",
+                        "Cơm mẹ nấu rồi",
+                        "Vật lộn, vậy luôn",
+                        "Đậu xanh rau má",
+                        "Có cái beep",
+                        "Nha đầu ngốc", 
+                        "Cúc cu",
+                        "Chào mào",
+                        "Vãi cả linh hồn",
+                        "Thấy mồ, thấy mẹo",
+                        "Cái lon",
+                        "Lợn lòi",
+                        "Con pò",
+                        "Pò",
+                        "Chá, chóa",
+                        "Đầu bưởi",
+                        "Vải cực, Vãi đạn",
+                        "Bưởi",
+                        "Con đĩa"
+                        
+                        ]
 
         const wordsselect = document.getElementById("words");
         wordsselect.addEventListener('change', (e) => {
@@ -92,11 +118,14 @@ var after = ["Cái lùm mía",
             const value = e.target.value;
             let word = document.getElementById("ans");
 
+            let srci = document.getElementById("ansimage").src;
+
             for (let i = 0;i<=after.length;i++){
 
                 if (i == value){
 
                     word.innerHTML = after[i];
+                    document.getElementById("ansimage").src = src_after[i];
 
                 }
 
